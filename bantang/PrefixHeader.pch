@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  bantang
+//
+//  Created by MS on 15-12-28.
+//  Copyright (c) 2015年 ms. All rights reserved.
+//
+
+#ifndef bantang_PrefixHeader_pch
+#define bantang_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "UIView+Extension.h"
+#import "NetAPI.h"
+#import "MJExtension.h"
+
+
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT  [UIScreen mainScreen].bounds.size.height
+#define NAVBARHEIGHT 64.0f
+
+#define FONTMAX 15.0
+#define FONTMIN 14.0
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

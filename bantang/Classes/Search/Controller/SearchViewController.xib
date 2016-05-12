@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController">
+            <connections>
+                <outlet property="collectionView" destination="1ve-Y0-AIW" id="Ceu-Zp-Eoe"/>
+                <outlet property="tableView" destination="EML-LK-aeI" id="ucl-HR-eMZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EML-LK-aeI">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="58c-HZ-EUt"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.34243348489999997" green="0.34333322500000002" blue="0.35706313779999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexColor" red="0.82740752551020402" green="0.21060954082775563" blue="0.22295600725222017" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="84r-RF-Xim"/>
+                        <outlet property="delegate" destination="-1" id="cX7-tT-hq3"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1ve-Y0-AIW">
+                    <rect key="frame" x="100" y="0.0" width="275" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JIW-lj-aR0">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="XJV-b5-SIc"/>
+                        <outlet property="delegate" destination="-1" id="q0n-5G-DiP"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EML-LK-aeI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2gN-Te-Mxh"/>
+                <constraint firstAttribute="bottom" secondItem="EML-LK-aeI" secondAttribute="bottom" id="OYR-uu-8kj"/>
+                <constraint firstItem="1ve-Y0-AIW" firstAttribute="leading" secondItem="EML-LK-aeI" secondAttribute="trailing" id="PyM-1x-nhi"/>
+                <constraint firstAttribute="bottom" secondItem="1ve-Y0-AIW" secondAttribute="bottom" id="UkL-Jj-R8c"/>
+                <constraint firstItem="1ve-Y0-AIW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="foj-gB-qhh"/>
+                <constraint firstItem="EML-LK-aeI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gDL-jt-4j8"/>
+                <constraint firstAttribute="trailing" secondItem="1ve-Y0-AIW" secondAttribute="trailing" id="i1v-M7-f6W"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="138.5" y="153.5"/>
+        </view>
+    </objects>
+</document>
